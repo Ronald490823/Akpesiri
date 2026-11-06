@@ -25,7 +25,7 @@ nav.querySelectorAll('a').forEach(a =>
   })
 );
 
-// ===== Music: "Happy" by Pharrell Williams (official 30s Apple Music preview) =====
+// ===== Music: "Baba We Thank You O" by Nathaniel Bassey (official 30s Apple Music preview) =====
 const song = document.getElementById('song');
 const playBtn = document.getElementById('playBtn');
 const music = document.querySelector('.music');
@@ -39,10 +39,10 @@ const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(
 let userPaused = false;
 
 // Refresh the preview URL + cover art from iTunes (preview links can change over time)
-fetch('https://itunes.apple.com/search?term=pharrell+williams+happy&entity=song&limit=5')
+fetch('https://itunes.apple.com/search?term=nathaniel+bassey+baba+we+thank+you&entity=song&limit=5')
   .then(r => r.json())
   .then(d => {
-    const hit = d.results.find(r => /^Happy/.test(r.trackName) && r.artistName === 'Pharrell Williams' && !/Live/i.test(r.trackName));
+    const hit = d.results.find(r => /^Baba We Thank You/i.test(r.trackName) && r.artistName === 'Nathaniel Bassey');
     if (!hit) return;
     if (song.paused && hit.previewUrl && hit.previewUrl !== song.src) song.src = hit.previewUrl;
     if (hit.artworkUrl100) {
