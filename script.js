@@ -267,4 +267,6 @@ if (lb && lb.showModal) {
   }));
   lb.querySelector('.lb-close').addEventListener('click', () => lb.close());
   lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+  lb.addEventListener('close', () => { document.documentElement.style.overflow = ''; });
+  new MutationObserver(() => { if (lb.open) document.documentElement.style.overflow = 'hidden'; }).observe(lb, { attributes: true, attributeFilter: ['open'] });
 }
