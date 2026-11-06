@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ewherhe (Ronald) Akpesiri — Full-Stack Software Engineer</title>
+  <meta name="description" content="Ewherhe (Ronald) Akpesiri — Technology Builder, Full-Stack Software Engineer, Founder of BuildWithPuzzle, aspiring cybersecurity professional. Lagos, Nigeria." />
+  <meta property="og:title" content="Ewherhe (Ronald) Akpesiri — Technology Builder" />
+  <meta property="og:description" content="Full-stack engineer and founder building products that solve real problems for real people." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar" id="top" data-hidden="true">
+    <a href="#home" class="logo" aria-label="Home">E</a>
+    <nav class="nav" id="nav">
+      <a href="#superpowers">Superpowers</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar-right">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+    <!-- ============ HERO: desktop ============ -->
+    <section class="desk" id="home" aria-label="Intro">
+      <div class="desk-screen" id="desk">
+
+        <!-- Menu bar -->
+        <div class="menubar">
+          <div class="menubar-left">
+            <b>EA</b>
+            <span class="mb-hide">Ewherhe Akpesiri</span>
+            <span class="mb-hide mb-dim">Full-Stack Software Engineer</span>
+          </div>
+          <span class="mb-clock" id="clock">--:--</span>
+        </div>
+
+        <!-- Centre headline -->
+        <div class="desk-center">
+          <div class="desk-headline glass-m">
+            <h1>
+              <span class="hl hl-1">I'm Ewherhe.</span><br />
+              <span class="hl hl-2">I build products at <a href="#experience">BuildWithPuzzle</a></span>
+            </h1>
+            <p class="hl hl-3">Full-stack engineer, founder and teacher. I turn real problems into working software for clients in Nigeria, the US, the UK, Canada and Ireland, and I'm studying cybersecurity along the way.</p>
+          </div>
+        </div>
+
+        <!-- Desktop folder icons -->
+        <div class="dw icon" style="left:4%;top:12%"><a href="#sp1"><span class="folder-icon"></span><em>Engineering</em></a></div>
+        <div class="dw icon" style="left:4%;top:28%"><a href="#sp2"><span class="folder-icon"></span><em>BuildWithPuzzle</em></a></div>
+        <div class="dw icon" style="left:4%;top:44%"><a href="#work"><span class="folder-icon"></span><em>Client Work</em></a></div>
+        <div class="dw icon" style="left:4%;top:60%"><a href="#sp3"><span class="folder-icon"></span><em>Teaching</em></a></div>
+        <div class="dw icon" style="left:4%;top:76%"><a href="#sp4"><span class="folder-icon"></span><em>Cybersecurity</em></a></div>
+
+        <!-- Music player -->
+        <div class="dw glass music" style="left:76%;top:9%;width:290px">
+          <div class="music-row">
+            <div class="music-art" aria-hidden="true"><span>☺</span></div>
+            <div class="music-meta">
+              <a class="track" href="https://open.spotify.com/search/Happy%20Pharrell%20Williams" target="_blank" rel="noopener">Happy</a>
+              <p class="artist">Pharrell Williams</p>
+              <div class="controls">
+                <button id="backBtn" aria-label="Restart song">⏮</button>
+                <button id="playBtn" aria-label="Play music">▶</button>
+                <button id="muteBtn" aria-label="Mute">🔊</button>
+              </div>
+            </div>
+          </div>
+          <div class="progress" id="progress"><span id="progressBar"></span></div>
+          <div class="times"><span id="curTime">0:00</span><span id="durTime">0:30</span></div>
+          <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <audio id="song" preload="auto" loop
+            src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/a0/19/eda019cf-2794-66d1-208d-2e2e74c26c3d/mzaf_16469762943852039623.plus.aac.p.m4a"></audio>
+        </div>
+
+        <!-- Photo -->
+        <div class="dw photo-w" style="left:15%;top:58%">
+          <!-- Replace with your photo: <img src="me.jpg" alt="Ewherhe Akpesiri"> -->
+          <div class="photo-placeholder" aria-label="Photo of Ewherhe Akpesiri"><span>EA</span></div>
+        </div>
+
+        <!-- Weather -->
+        <div class="dw glass weather" id="weather" style="left:78%;top:39%;width:250px">
+          <div class="w-head"><p>Lagos</p><p class="w-temp" id="wTemp">29°</p></div>
+          <ul class="forecast" id="forecast">
+            <li><span>Mo</span>⛅<b>30</b></li>
+            <li><span>Tu</span>🌦️<b>29</b></li>
+            <li><span>We</span>⛅<b>31</b></li>
+            <li><span>Th</span>🌧️<b>28</b></li>
+            <li><span>Fr</span>⛅<b>30</b></li>
+            <li><span>Sa</span>☀️<b>31</b></li>
+            <li><span>Su</span>🌦️<b>29</b></li>
+          </ul>
+        </div>
+
+        <!-- App grid -->
+        <div class="dw glass apps" style="left:75%;top:64%">
+          <div class="app-grid">
+            <a href="https://ewherheakpesiri.cv/" target="_blank" rel="noopener" data-tip="My CV"><span style="--c:#facc15">📄</span></a>
+            <a href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a" target="_blank" rel="noopener" data-tip="LinkedIn"><span style="--c:#0a66c2;color:#fff;font-weight:800;font-size:1.05rem">in</span></a>
+            <a href="mailto:hello@example.com" data-tip="Email"><span style="--c:#3b82f6">✉️</span></a>
+            <a href="https://claude.ai/new?q=Who%20is%20Ewherhe%20(Ronald)%20Akpesiri%2C%20full-stack%20software%20engineer%20and%20founder%20of%20BuildWithPuzzle%3F" target="_blank" rel="noopener" data-tip="Ask Claude"><span style="--c:#d97757;color:#fff">✳</span></a>
+            <a href="https://chatgpt.com/?q=Who%20is%20Ewherhe%20(Ronald)%20Akpesiri%2C%20full-stack%20software%20engineer%20and%20founder%20of%20BuildWithPuzzle%3F" target="_blank" rel="noopener" data-tip="Ask ChatGPT"><span style="--c:#10a37f;color:#fff">◎</span></a>
+            <a href="#work" data-tip="Projects"><span style="--c:#1c1917;color:#4ade80;font-family:var(--mono);font-size:.9rem">&gt;_</span></a>
+            <a href="#experience" data-tip="Experience"><span style="--c:#fff">🧩</span></a>
+            <a href="#about" data-tip="about-me.txt"><span style="--c:#f5f5f4">📝</span></a>
+            <a href="https://www.flextable.co/" target="_blank" rel="noopener" data-tip="Flextable"><span style="--c:#ede9fe">🪑</span></a>
+            <a href="#contact" data-tip="Contact"><span style="--c:#dcfce7">💬</span></a>
+          </div>
+        </div>
+
+        <a href="#achievements" class="scroll-cue" aria-label="Scroll down">scroll ↓</a>
+      </div>
+    </section>
+
+  <main class="after-hero">
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section container" id="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements">
+        <article class="card ach"><span class="emoji">🎓</span><h3>B.Sc. Mathematics</h3><p class="muted">Delta State University, Abraka. That's where I learned to break hard problems down, to fail, and to build resilience along the way.</p></article>
+        <article class="card ach"><span class="emoji">🧩</span><h3>Founder, BuildWithPuzzle</h3><p class="muted">I built and led a team that ships products for clients in Nigeria, the US, the UK, Canada and Ireland.</p></article>
+        <article class="card ach"><span class="emoji">👨🏾‍🏫</span><h3>60+ students per camp</h3><p class="muted">As a software engineering instructor at SkySenx tech camps, I taught 60+ students at each camp.</p></article>
+        <article class="card ach"><span class="emoji">🏥</span><h3>Healthtech adoption</h3><p class="muted">I worked with the Greenfoot team that built Westend Hospital's management software in Warri, and I trained doctors, nurses, lab scientists, ICT, front desk and accounts staff to use the HMS.</p></article>
+        <article class="card ach"><span class="emoji">🛡️</span><h3>Cybersecurity milestone</h3><p class="muted">I'm working through the Cybersecurity (Aurora) track at TS Academy and Hextree's "Your First Hacks".</p></article>
+        <article class="card ach"><span class="emoji">🔌</span><h3>FG Build-A-Thon educator</h3><p class="muted">On the Federal Government's nationwide Build-A-Thon, I taught students to build software and hardware with microcontrollers and breadboards.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ COMPANIES MARQUEE ============ -->
+    <section class="section press" aria-label="Companies I've worked with">
+      <div class="container"><h2 class="section-title">Companies I've worked with</h2></div>
+      <div class="marquee">
+        <div class="marquee-track" id="marquee">
+          <a class="press-card" href="https://www.google.com/search?q=Speedpay+Nigeria" target="_blank" rel="noopener"><b>Speedpay</b><span>Fintech: ZuriPay &amp; a transactions API</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=TernTribe" target="_blank" rel="noopener"><b>TernTribe</b><span>Software engineering</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=FMCIDE+Build-A-Thon" target="_blank" rel="noopener"><b>FG Build-A-Thon</b><span>Educator: software &amp; hardware for students</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=SkySenx" target="_blank" rel="noopener"><b>SkySenx</b><span>Edtech: software engineering instructor</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=South+Circle+software" target="_blank" rel="noopener"><b>South Circle</b><span>Frontend engineering across several products</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=Techenex" target="_blank" rel="noopener"><b>Techenex</b><span>AnyRide, a ride-hailing app</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=10TH+GEN+web3" target="_blank" rel="noopener"><b>10TH GEN</b><span>A full-stack Web3 platform</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=BuildWithPuzzle" target="_blank" rel="noopener"><b>BuildWithPuzzle</b><span>Founder &amp; lead engineer</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=Greenfoot+Warri" target="_blank" rel="noopener"><b>Greenfoot</b><span>Hospital software &amp; Ecofiber, an internet provider</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=Westend+Hospital+Warri" target="_blank" rel="noopener"><b>Westend Hospital</b><span>Healthtech: hospital management &amp; EMR</span></a>
+          <a class="press-card" href="https://www.google.com/search?q=Ecofiber+internet" target="_blank" rel="noopener"><b>Ecofiber</b><span>A new internet service provider</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPERPOWERS ============ -->
+    <section class="section container" id="superpowers">
+      <h2 class="section-title">Superpowers</h2>
+
+      <article class="pillar" id="sp1" style="--accent:#facc15">
+        <div class="pillar-head">
+          <span class="pillar-num mono">Superpower nº1</span>
+          <h3>Full-Stack Engineering</h3>
+          <p class="muted">I build, improve and maintain full-stack apps, APIs, backend systems and digital products, from the Figma file all the way to production.</p>
+        </div>
+        <ul class="metrics">
+          <li><b>Web3</b> I own a full-stack platform with smart contracts at 10TH GEN</li>
+          <li><b>AnyRide</b> I built a ride-hailing app's frontend and backend at Techenex</li>
+          <li><b>Stack</b> Python, JavaScript, React, Next.js, NestJS, Node, REST APIs, WordPress, Webflow</li>
+        </ul>
+        <a class="pill" href="#work">See projects →</a>
+      </article>
+
+      <article class="pillar" id="sp2" style="--accent:#a78bfa">
+        <div class="pillar-head">
+          <span class="pillar-num mono">Superpower nº2</span>
+          <h3>Founder &amp; Technical Leadership</h3>
+          <p class="muted">At BuildWithPuzzle I set the technical direction, delegate, review code, and keep engineering decisions tied to what the business needs.</p>
+        </div>
+        <ul class="metrics">
+          <li><b>Team</b> I assembled and lead engineers working with UI/UX designers</li>
+          <li><b>5 countries</b> Clients in Nigeria, Champaign IL (USA), the UK, Canada and Dublin (Ireland)</li>
+          <li><b>SaaS</b> Inventory, invoicing and e-commerce products</li>
+        </ul>
+        <a class="pill" href="#work">See products →</a>
+      </article>
+
+      <article class="pillar" id="sp3" style="--accent:#fb923c">
+        <div class="pillar-head">
+          <span class="pillar-num mono">Superpower nº3</span>
+          <h3>Teaching &amp; Mentorship</h3>
+          <p class="muted">Building people matters as much as building technology. I teach, mentor and speak to help the next generation of engineers find their potential.</p>
+        </div>
+        <ul class="metrics">
+          <li><b>60+</b> students taught at each SkySenx tech camp</li>
+          <li><b>Hospital</b> I trained doctors, nurses, lab, ICT, front desk and accounts staff at Westend Hospital</li>
+          <li><b>Mentor</b> I taught and mentored IT students at Greenfoot</li>
+          <li><b>Build-A-Thon</b> Federal Government educator: software, microcontrollers and breadboards</li>
+          <li><b>Speaker</b> I enjoy public speaking and sharing knowledge</li>
+        </ul>
+        <a class="pill" href="#contact">Invite me to speak →</a>
+      </article>
+
+      <article class="pillar" id="sp4" style="--accent:#4ade80">
+        <div class="pillar-head">
+          <span class="pillar-num mono">Superpower nº4</span>
+          <h3>Cybersecurity &amp; Hardware</h3>
+          <p class="muted">I'm building practical security skills so I can build secure systems, and I'm exploring electronics and connected hardware for real-world problems.</p>
+        </div>
+        <ul class="metrics">
+          <li><b>TS Academy</b> Cybersecurity (Aurora) track</li>
+          <li><b>Hextree</b> "Your First Hacks" completed</li>
+          <li><b>IoT</b> Exploring connected systems and electronics</li>
+        </ul>
+        <a class="pill" href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a" target="_blank" rel="noopener">Follow the journey →</a>
+      </article>
+    </section>
+
+    <!-- ============ EXPERIENCE (searchable) ============ -->
+    <section class="section container" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="search">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Search companies, projects or skills…  e.g. Speedpay, React, fintech" aria-label="Search experience and projects" />
+        <kbd class="mono">/</kbd>
+      </div>
+      <p class="search-empty muted" id="searchEmpty" hidden>No matches. Try “fintech”, “Web3” or “WordPress”.</p>
+
+      <ol class="timeline">
+        <li class="role-item searchable" data-tags="web3 blockchain smart contract nestjs full-stack contract remote">
+          <div class="when mono">Dec 2025 — Present</div>
+          <div><h3>Software Engineer · <span>10TH GEN</span></h3>
+            <p class="muted">I own the end-to-end build and deployment of a full-stack Web3 platform: frontend, backend and smart contracts, and I coordinate a second engineer. It was my first Web3 project, so I learned from the docs and from senior colleagues as I went.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="anyride ride hailing mobility figma frontend backend">
+          <div class="when mono">Dec 2025 — Present</div>
+          <div><h3>Software Engineer · <span>Techenex</span></h3>
+            <p class="muted">I own the development of AnyRide, a ride-hailing app, turning Figma designs into working features across the frontend and backend. A senior engineer reviews my code, and I join daily check-ins and weekly PM syncs.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="python javascript buildwithpuzzle founder lead saas inventory invoice ecommerce seo canada dublin ireland usa us champaign illinois uk united kingdom">
+          <div class="when mono">Apr 2025 — Present</div>
+          <div><h3>Founder &amp; Lead Engineer · <span>BuildWithPuzzle</span></h3>
+            <p class="muted">I build digital products for clients in Nigeria, Champaign IL (USA), the UK, Canada and Dublin (Ireland): business websites, an inventory SaaS, an invoice generator, and an e-commerce storefront that's in progress. I'm hands-on across the frontend, backend, architecture, SEO and deployment.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="south circle frontend react architecture api code review delta remote">
+          <div class="when mono">Jan 2024 — Nov 2025</div>
+          <div><h3>Frontend Software Engineer · <span>South Circle</span></h3>
+            <p class="muted">I owned frontend engineering on several products: reusable, responsive interfaces connected to backend APIs, plus performance tuning and code reviews with cross-functional teams.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="speedpay zuripay fintech payments transactions api endpoint backend event management website lagos">
+          <div class="when mono">Fintech · Present</div>
+          <div><h3>Software Engineer · <span>Speedpay</span></h3>
+            <p class="muted">Speedpay is a Lagos fintech building financial access for under-banked Nigerians. I built <b>ZuriPay</b>, including the backend endpoint that manages transactions. It was built but not yet shipped to production. I'm now building an <b>event management website</b>.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="terntribe software engineering">
+          <div class="when mono">Software</div>
+          <div><h3>Software Engineer · <span>TernTribe</span></h3>
+            <p class="muted">Software engineering work at TernTribe.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="build-a-thon buildathon federal government fmcide ministry communications innovation digital economy educator hardware microcontroller breadboard arduino electronics students teaching raspberry pi">
+          <div class="when mono">2026 · Nationwide</div>
+          <div><h3>Educator · <span>Federal Government Build-A-Thon</span></h3>
+            <p class="muted">The Build-A-Thon is a nationwide programme run by the Federal Ministry of Communications, Innovation &amp; Digital Economy (with the Raspberry Pi Foundation) to give young Nigerians hands-on experience with technology. As an educator, I taught students to build both <b>software and hardware</b>: wiring circuits on breadboards, programming microcontrollers, and seeing their code move something in the real world.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="skysenx skysenxhub techcamp edtech instructor teaching mentor camp">
+          <div class="when mono">Edtech</div>
+          <div><h3>Software Engineering Instructor · <span>SkySenx</span></h3>
+            <p class="muted">At the SkySenx Hub TechCamp, I taught 60+ students at each camp and helped beginners gain hands-on, job-ready software skills.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="hms doctors nurses lab front desk accountant ict greenfoot it students mentoring teaching westend hospital warri healthtech hospital management emr health records training ecofiber internet isp">
+          <div class="when mono">Healthtech · ISP</div>
+          <div><h3>Software Engineer · <span>Greenfoot</span></h3>
+            <p class="muted">Greenfoot was contracted by Westend Hospital, Warri, to build its hospital management software. I worked with the team that built it and trained staff in every department to use the hospital management system (HMS): doctors, nurses, lab scientists, ICT, front desk and accounts. That moved day-to-day hospital workflows onto digital tools. I also built Ecofiber, the company's new internet service provider, and taught and mentored the IT students who trained with the company.</p></div>
+        </li>
+        <li class="role-item searchable" data-tags="freelance web designer wordpress webflow no-code dyen">
+          <div class="when mono">Jan 2023 — Present</div>
+          <div><h3>Web Designer · <span>Freelance</span></h3>
+            <p class="muted">I design and build responsive websites and blogs on WordPress and Webflow, fix broken sites, and turn mockups into accessible interfaces. I trained through DYEN.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ WORK / CASE STUDIES ============ -->
+    <section class="section container" id="work">
+      <h2 class="section-title">Client work &amp; products</h2>
+      <p class="section-sub muted">Every project starts as a problem someone has. Open a card to read how it went.</p>
+
+      <div class="work-grid">
+
+        <details class="card work searchable" data-tags="myhireroad hireroad career resume cv admin dashboard notification backend us">
+          <summary>
+            <span class="year mono">Career services · Full-stack</span>
+            <h3>MyHireRoad</h3>
+            <p class="muted">A career-coaching site with an admin dashboard for CV submissions and built-in notifications.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>The founder is a former healthcare COO who now coaches mid-level to C-suite professionals. Those clients are qualified but aren't getting interviews, usually because their resumes list duties instead of results, aren't formatted for applicant tracking systems (ATS), and pair with LinkedIn profiles that tell no clear story. CVs were coming in through email and DMs, so leads were easy to lose and slow to answer.</p>
+            <h4>What I built</h4>
+            <p>On the front, a clear, conversion-focused site lays out the services: resume writing, LinkedIn optimisation, interview coaching, career transition and salary negotiation, plus a booking flow for a consultation. Behind it is a <b>custom backend</b>. Visitors upload their CV, and every submission lands in a secure <b>admin dashboard</b> where the founder can view, download and track each one. A <b>built-in notification system</b> alerts her the moment a new CV arrives, so no lead goes cold.</p>
+            <h4>The outcome</h4>
+            <p>Every CV now lives in one place, with nothing lost in an inbox, and the founder responds faster to the people she's trying to help.</p>
+            <a class="pill" href="https://myhireroad.vercel.app/" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="de flourishers deflourisher event luxury wedding warri port harcourt booking gallery">
+          <summary>
+            <span class="year mono">Events · Website</span>
+            <h3>De-Flourishers Events</h3>
+            <p class="muted">A luxury event brand with offices in Warri and Port Harcourt.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>De-Flourishers plans and styles weddings, milestone celebrations and corporate events: decor, rentals, ushering and full production. Their work is beautiful, but it lived only on Instagram, so serious clients had no single place to judge their quality or book them.</p>
+            <h4>What I built</h4>
+            <p>The website matches the brand: "luxury event experiences crafted with precision, elegance and emotion." It includes service pages, an event gallery, case studies that tell the story behind each celebration, a booking page, and contact details for both the Warri head office and the Port Harcourt branch.</p>
+            <h4>The outcome</h4>
+            <p>The business now has a premium storefront that makes its work look as good online as it does in person, and turns admirers into bookings.</p>
+            <a class="pill" href="https://www.deflourisherevent.com/" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="flextable workspace coworking booking platform marketplace meeting rooms studios remote freelancers warri asaba benin port harcourt effurun nigeria">
+          <summary>
+            <span class="year mono">Workspace booking · Nigeria</span>
+            <h3>Flextable</h3>
+            <p class="muted">A platform for finding and booking flexible workspaces across Nigerian cities.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Remote workers, freelancers and startup founders in cities like Warri, Asaba, Benin City and Port Harcourt often lose hours looking for a reliable place to work. That means calling around, showing up to full rooms, or settling for a noisy café. Space owners have the opposite problem: empty desks and studios nobody knows exist.</p>
+            <h4>What I built</h4>
+            <p>Flextable is a workspace matchmaker. People can search for and book coworking desks, meeting rooms, and content, photo, audio and film studios. They can also check in, manage bookings, renew subscriptions and leave reviews. Hosts list their own spaces, and the <b>FlexEnabler</b> programme rewards hosts and community members with membership perks for connecting people to spaces.</p>
+            <h4>The outcome</h4>
+            <p>Finding a place to work became a few taps instead of a few phone calls. Flextable now lists spaces in 10 cities and serves 1,000+ users, helping people get work done and helping space owners fill their rooms.</p>
+            <a class="pill" href="https://www.flextable.co/" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="phs perfect home services interiors enugu interior design academy cleaning real estate">
+          <summary>
+            <span class="year mono">Interiors · Enugu</span>
+            <h3>PHS Interiors</h3>
+            <p class="muted">A design, finishing, cleaning, real estate and academy business, all on one site.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Perfect Home Services started in 2017 doing painting and wallpaper. It grew into interior and exterior design, renovation, 3D visualisation, cleaning and fumigation, real estate, and a 3-month Interior Design Academy, with 400+ projects delivered. Customers couldn't see how much the business now offered.</p>
+            <h4>What I built</h4>
+            <p>A structured site that gives each line of business its own clear home. Homeowners, offices and commercial clients can find the service they need, and aspiring designers can learn about the academy.</p>
+            <h4>The outcome</h4>
+            <p>The site finally shows the full scale of the business, so one visitor can become a customer of several services.</p>
+            <a class="pill" href="https://www.phsinteriors.com/" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="lumina neuro literacy studio dublin ireland seo booking education">
+          <summary>
+            <span class="year mono">Education · Dublin, IE</span>
+            <h3>Lumina Neuro-Literacy Studio</h3>
+            <p class="muted">A literacy studio in Dublin, now fully booked with a waiting list.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Lumina supports learners through neuro-informed literacy coaching. They offered a valuable, specialised service, but the families searching for it couldn't find them online.</p>
+            <h4>What we built</h4>
+            <p>Working with an SEO specialist, we built a fast, accessible, search-ready website. We handled indexing, local SEO, the Google Business Profile, and content written for the parents and learners looking for help.</p>
+            <h4>The outcome</h4>
+            <p>The studio started showing up in search, enquiries and bookings came in, and it's now <b>fully booked with a waiting list</b>.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="caírde cairde concierge service website">
+          <summary>
+            <span class="year mono">Concierge · Website</span>
+            <h3>Caírde Concierge</h3>
+            <p class="muted">A website for a personal concierge service.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <!-- TODO: refine this story with project specifics -->
+            <h4>The problem</h4>
+            <p>Concierge work runs on trust. Prospective clients need to understand the services quickly and feel confident enough to reach out.</p>
+            <h4>What I built</h4>
+            <p>A clean, responsive site that presents the services clearly, builds credibility, and makes getting in touch easy.</p>
+            <h4>The outcome</h4>
+            <p>The business has a professional online presence that turns visitors into enquiries.</p>
+            <a class="pill" href="https://cairdeconciege.com" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="healthy golden years initiative ngo nonprofit elderly ageing health lagos ijede photography storytelling donate volunteer">
+          <summary>
+            <span class="year mono">NGO · Website, photography &amp; story</span>
+            <h3>Healthy Golden Years Initiative</h3>
+            <p class="muted">A Lagos nonprofit for healthy ageing. I built the site, took the photos and wrote the story.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Healthy Golden Years Initiative is a registered nonprofit in Ijede, Lagos. It helps older adults live healthier, more independent and dignified lives through preventive health education, community outreach, self-care programmes and caregiver support. The work was real and happening in communities, but without a home online, donors, volunteers and partners couldn't see it or support it.</p>
+            <h4>What I did</h4>
+            <p>I handled the whole thing. I <b>built the website</b>, went into the community and <b>took the photographs</b>, and <b>wrote the story</b> the site tells. That story moves from "why we exist" and "growing older should come with dignity" to their Educate → Prevent → Connect → Empower approach, six programmes, their values, a community gallery, and clear paths to donate, volunteer or partner.</p>
+            <h4>The outcome</h4>
+            <p>The NGO now has a warm, credible presence that shows its impact through real faces from its own outreach, not stock photos, and gives anyone who's moved by the mission an easy way to help.</p>
+            <a class="pill" href="https://www.healthygoldenyears.care/" target="_blank" rel="noopener">Visit live site ↗</a>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="westend hospital greenfoot hospital management software emr health records warri training healthtech">
+          <summary>
+            <span class="year mono">Greenfoot · Healthtech</span>
+            <h3>Westend Hospital Management System</h3>
+            <p class="muted">Hospital management software and an EMR for Westend Hospital, Warri.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Westend Hospital ran on paper files and manual processes. Patient records were slow to find and easy to misplace, and that slowed care at every step.</p>
+            <h4>My role</h4>
+            <p>Greenfoot was contracted to build the hospital's management software, including the electronic medical records (EMR). I worked with the team that built it, then trained staff across the whole hospital to use the HMS day to day: <b>doctors, nurses, lab scientists, the ICT team, front desk and accountants</b>. Each department had its own workflow, so I tailored the training to how each team actually works.</p>
+            <h4>The outcome</h4>
+            <p>The hospital adopted digital records, so staff could find patient information faster and spend more time on care. Building the software was only half the job; getting people to use it was the other half.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="ecofiber greenfoot internet service provider isp broadband fibre">
+          <summary>
+            <span class="year mono">Greenfoot · Internet provider</span>
+            <h3>Ecofiber</h3>
+            <p class="muted">The digital platform for a new internet service provider.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <!-- TODO: add specifics (plans, coverage, signup flow) and a live link -->
+            <h4>The problem</h4>
+            <p>Greenfoot was launching Ecofiber as a new internet service provider. A new provider has to earn trust quickly, so customers needed one clear place to see plans, check coverage and sign up.</p>
+            <h4>What I built</h4>
+            <p>I built Ecofiber's platform from the ground up: a clear, responsive experience that presents its internet plans and guides prospective customers from interest to getting connected.</p>
+            <h4>The outcome</h4>
+            <p>Ecofiber launched with a professional digital presence for reaching and onboarding its first customers.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="zuripay speedpay fintech payments transactions api endpoint backend">
+          <summary>
+            <span class="year mono">Speedpay · Fintech backend</span>
+            <h3>ZuriPay</h3>
+            <p class="muted">A payments product, with the endpoint that manages its transactions.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <!-- TODO: add specifics (stack, what the endpoint handles: create / verify / history, etc.) -->
+            <h4>The problem</h4>
+            <p>Speedpay serves people the traditional banking system often leaves behind. To do that, its payment products need a reliable core where every transaction is recorded, tracked and handled correctly.</p>
+            <h4>What I built</h4>
+            <p>I built ZuriPay, including the backend endpoint that manages its transactions: receiving transaction requests, processing them, and keeping an accurate record of each one.</p>
+            <h4>Status</h4>
+            <p>Built, but not yet shipped to production. It taught me how much care money-moving software needs: validation, consistency, and thinking through every failure case before it reaches a real user.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="event management website speedpay in progress events tickets">
+          <summary>
+            <span class="year mono">Speedpay · In progress</span>
+            <h3>Event Management Website</h3>
+            <p class="muted">A platform for planning and running events. Currently in development.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <!-- TODO: add what it does once you're ready to share (tickets, RSVPs, check-in, payments, etc.) -->
+            <h4>The problem</h4>
+            <p>Organising an event usually means juggling spreadsheets, messages and payment screenshots. Organisers need one place to manage it all.</p>
+            <h4>What I'm building</h4>
+            <p>An event management website that brings planning and running an event together in one place.</p>
+            <h4>Status</h4>
+            <p>In active development.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="inventory saas buildwithpuzzle pharmacy supermarket warehouse sales stock branches">
+          <summary>
+            <span class="year mono">BuildWithPuzzle · SaaS</span>
+            <h3>Inventory Management SaaS</h3>
+            <p class="muted">Stock, sales, refunds and multiple branches in one dashboard.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Shops, supermarkets, pharmacies and warehouses often track stock in notebooks or spreadsheets. They lose money to stock-outs, untracked refunds, and not knowing which products actually sell.</p>
+            <h4>What we built</h4>
+            <p>A business management platform for tracking inventory, sales and refunds, watching stock levels, spotting top sellers, and managing several branches from one account.</p>
+            <h4>The outcome</h4>
+            <p>Owners see their business in real time and make decisions from data instead of guesswork.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="invoice generator billing small business buildwithpuzzle">
+          <summary>
+            <span class="year mono">BuildWithPuzzle · Tool</span>
+            <h3>Invoice Generator</h3>
+            <p class="muted">Professional invoices for small businesses.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Many local businesses still bill with handwritten receipts or messy templates. That looks unprofessional and slows down getting paid.</p>
+            <h4>What we built</h4>
+            <p>A simple invoicing tool that helps small businesses create clean, branded invoices in minutes.</p>
+            <h4>The outcome</h4>
+            <p>Billing is faster, more professional, and easier to track.</p>
+          </div>
+        </details>
+
+        <details class="card work searchable" data-tags="ecommerce storefront online store buildwithpuzzle">
+          <summary>
+            <span class="year mono">BuildWithPuzzle · In progress</span>
+            <h3>E-commerce Storefront</h3>
+            <p class="muted">Online stores for businesses ready to sell digitally.</p>
+            <span class="open-hint mono">Read story +</span>
+          </summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p>Many businesses sell only through WhatsApp and walk-ins, which caps how far they can grow.</p>
+            <h4>What we're building</h4>
+            <p>A storefront solution that gives businesses their own online shop: product catalogue, cart and checkout.</p>
+            <h4>Status</h4>
+            <p>In active development.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Writing / thoughts -->
+      <div class="card playground">
+        <div>
+          <p class="label mono">playground · thoughts</p>
+          <h3>Things I've been thinking about</h3>
+          <ul class="writing">
+            <li><a href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a/recent-activity/all/" target="_blank" rel="noopener">God is the greatest developer of all time <span>↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a/recent-activity/all/" target="_blank" rel="noopener">What can we build on Nigeria's new digital postcode? <span>↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a/recent-activity/all/" target="_blank" rel="noopener">Looking for my inner child at GITEX Lagos 2026 <span>↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a/recent-activity/all/" target="_blank" rel="noopener">When the work you're proud of isn't what the client wants <span>↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY + EVENTS ============ -->
+    <section class="section container" id="gallery">
+      <h2 class="section-title">On the ground</h2>
+      <p class="section-sub muted">Teaching, training and showing up. A few moments from the work behind the work.</p>
+      <div class="gallery">
+        <figure class="g-item g-tall">
+          <button class="g-open" aria-label="Enlarge photo"><img src="img/hardware-1.jpg" alt="Breadboard, jumper wires, potentiometer and servo wired to a microcontroller next to a laptop" loading="lazy"></button>
+          <figcaption><b>Build-A-Thon</b> Hardware prep: breadboard, microcontroller, servo and a lot of jumper wires</figcaption>
+        </figure>
+        <figure class="g-item g-wide">
+          <button class="g-open" aria-label="Enlarge photo"><img src="img/students-techcamp.jpg" alt="Group photo of SkySenx Hub TechCamp students" loading="lazy"></button>
+          <figcaption><b>SkySenx TechCamp</b> My students, August 2024</figcaption>
+        </figure>
+        <figure class="g-item g-wide">
+          <button class="g-open" aria-label="Enlarge photo"><img src="img/heads%20of%20deptment%20training.jpg" alt="Training heads of department at Westend Hospital on the hospital management system" loading="lazy"></button>
+          <figcaption><b>Westend Hospital</b> Training heads of department on the HMS</figcaption>
+        </figure>
+        <figure class="g-item g-wide">
+          <button class="g-open" aria-label="Enlarge photo"><img src="img/training%20lab%20staffs.jpg" alt="Training Westend Hospital lab staff on the hospital management system" loading="lazy"></button>
+          <figcaption><b>Westend Hospital</b> Training the lab team</figcaption>
+        </figure>
+        <figure class="g-item g-tall">
+          <button class="g-open" aria-label="Enlarge photo"><img src="img/events.jpg" alt="Attendees at a tech event session" loading="lazy"></button>
+          <figcaption><b>Events</b> Learning in the room</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="sub-title">Events I show up to</h3>
+      <p class="muted events-intro">I go to every tech event I can find. Seeing things I've never seen before is how I find ideas worth building.</p>
+      <div class="events">
+        <a class="card event searchable" data-tags="gitex lagos 2026 tech expo" href="https://www.google.com/search?q=GITEX+Nigeria+Lagos" target="_blank" rel="noopener">
+          <span class="ev-tag mono">Tech expo</span><h4>GITEX Lagos 2026</h4><p class="muted">Explored Zoho's inventory tools, met Lagos data-centre operators, and sat in on the future of banking and finance.</p></a>
+        <a class="card event searchable" data-tags="api conf lagos conference apis developers" href="https://www.google.com/search?q=API+Conf+Lagos" target="_blank" rel="noopener">
+          <span class="ev-tag mono">Developer conference</span><h4>API Conf Lagos</h4><p class="muted">Lagos's community conference on APIs: hands-on workshops and talks on AI, infrastructure, developer experience and security.</p></a>
+        <a class="card event searchable" data-tags="whx lagos world health expo healthtech medic west africa" href="https://www.google.com/search?q=WHX+Lagos+World+Health+Expo" target="_blank" rel="noopener">
+          <span class="ev-tag mono">Healthtech expo</span><h4>WHX Lagos</h4><p class="muted">World Health Expo Lagos, West Africa's big healthcare and labs show. A natural stop after my work with Westend Hospital.</p></a>
+        <a class="card event searchable" data-tags="rendezvous nathaniel bassey worship" href="https://www.google.com/search?q=Rendezvous+Nathaniel+Bassey" target="_blank" rel="noopener">
+          <span class="ev-tag mono">Faith &amp; community</span><h4>Rendezvous with Nathaniel Bassey</h4><p class="muted">Not a tech event, but it's where I refuel. Faith is a big part of why I build.</p></a>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button class="lb-close" aria-label="Close">✕</button>
+      <img alt="">
+      <p class="lb-cap"></p>
+    </dialog>
+
+    <!-- ============ ABOUT (txt window) ============ -->
+    <section class="section container" id="about">
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="window-title mono">about-me.txt</span>
+        </div>
+        <div class="window-body">
+          <h4 class="mono">// Then</h4>
+          <p>I studied Mathematics at Delta State University, Abraka, and learned to love breaking hard problems into solvable pieces. I started building websites as a freelancer, trained through DYEN, then moved into full-stack engineering. Along the way I worked across edtech, fintech and healthtech: teaching 60+ students per camp at SkySenx, teaching students to build software and hardware as a Federal Government Build-A-Thon educator, and working with the Greenfoot team behind Westend Hospital's management software in Warri, where I trained doctors, nurses, lab, ICT, front desk and accounts staff to use the HMS. At Greenfoot I also built Ecofiber, the company's new internet provider, and taught and mentored the IT students training with the company.</p>
+          <h4 class="mono">// Now</h4>
+          <p>I'm the founder and lead engineer of BuildWithPuzzle, where I lead a team building websites, SaaS and e-commerce for clients in Nigeria, the US, the UK, Canada and Ireland. I also build a Web3 platform at 10TH GEN and the AnyRide ride-hailing app at Techenex. In parallel I'm studying cybersecurity at TS Academy, because I want everything I build to be secure.</p>
+          <h4 class="mono">// The future</h4>
+          <p>I don't think my potential should be limited to one technology or title. I want to build things that make people stop and say, "Wow, someone actually thought about this." That spans software, cybersecurity, hardware and emerging tech. I don't give up. I build, I grow, and I help others grow along the way. Let's build something that matters.<span class="caret">▍</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p class="label mono footer-label">open to on-site · hybrid · remote</p>
+      <h2 class="footer-title">Let's build<br />something that matters.</h2>
+      <div class="footer-pills">
+        <a class="pill pill-light" href="mailto:hello@example.com">✉ Email</a>
+        <a class="pill pill-light" href="https://www.linkedin.com/in/ewherhe-akpesiri-73358819a" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill pill-light" href="https://www.google.com/search?q=BuildWithPuzzle" target="_blank" rel="noopener">BuildWithPuzzle</a>
+        <a class="pill pill-accent" href="https://ewherheakpesiri.cv/" target="_blank" rel="noopener">View my CV ↗</a>
+      </div>
+      <div class="footer-bottom">
+        <span class="mono small">© <span id="year"></span> Ewherhe (Ronald) Akpesiri · Lagos, Nigeria</span>
+        <a href="#top" class="mono small">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="sound-toast" id="soundToast" hidden>🎵 <span>Tap anywhere to turn on the music</span></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
